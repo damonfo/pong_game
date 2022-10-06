@@ -11,6 +11,8 @@ from ball import Ball
 import time
 from scoreboard import Scoreboard
 
+
+
 # Create the screen
 turtle = Turtle()
 screen = Screen()
@@ -34,7 +36,7 @@ screen.onkeypress(l_paddle.move_down, "s")
 game_is_on = True
 
 while game_is_on:
-    time.sleep(0.1)
+    time.sleep(ball.move_speed)
     screen.update()
     ball.move()
 
